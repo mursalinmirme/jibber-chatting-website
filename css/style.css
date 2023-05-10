@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.signing_bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  z-index: -1;
+}
+.signing_bg::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  /* background:linear-gradient(#E5AF6F,#D079CE); */
+  background: black;
+  z-index: 1;
+  opacity: 0.6;
+  background-blend-mode: lighten;
+}
+
+.signing_bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.signin_page {
+  padding: 0 20px;
+  border-radius: 10px;
+  background: none;
+  box-shadow: 1px 0px 10px 2px rgba(241, 234, 234, 0.48);
+  -webkit-box-shadow: 1px 0px 10px 2px rgba(241, 234, 234, 0.48);
+  -moz-box-shadow: 1px 0px 10px 2px rgba(241, 234, 234, 0.48);
+}
+.signin_page .app_logo {
+  padding: 40px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signin_page .app_logo h1 {
+  color: #000001;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  font-size: 45px;
+  font-style: italic;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgb(204, 219, 232) 0px 0px 3px 0.2px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 0px inset;
+}
+.signin_page .login_form .login_system {
+  text-align: center;
+}
+.signin_page .login_form .login_system b {
+  font-size: 21px;
+  color: #faf1e5;
+}
+.signin_page .login_form .login_greeting {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.signin_page .login_form .login_greeting span {
+  font-size: 19px;
+  color: #faf1e5;
+  font-weight: 400;
+}
+.signin_page .login_form .form .inputbox {
+  padding: 10px;
+  display: flex;
+  width: 450px;
+  color: #2a2a2a;
+  background: none;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  box-shadow: 1px 0px 5px 0px rgba(241,234,234,0.48);
+-webkit-box-shadow: 1px 0px 5px 0px rgba(241,234,234,0.48);
+-moz-box-shadow: 1px 0px 5px 0px rgba(241,234,234,0.48);
+}
+.signin_page .login_form .form .inputbox:hover {
+  box-shadow: #1dbf78 0px 1px 3px 0px, #1dbf78 0px 0px 0px 1px;
+}
+.signin_page .login_form .form .inputbox i {
+  width: 8%;
+  color: #f9f9ff;
+  display: flex;
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+}
+.signin_page .login_form .form .inputbox .login_input {
+  width: 90%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 8px 10px;
+  color: #f9f9ff;
+  background: none;
+}
+.signin_page .login_form .form .forgetbox {
+  width: 100%;
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+.signin_page .login_form .form .forgetbox .checkbox {
+  accent-color: #2a2a2a;
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  transform: scale(1.5);
+  margin-left: 3px;
+}
+.signin_page .login_form .form .forgetbox span {
+  font-size: 17px;
+  margin-left: 10px;
+  font-weight: 500;
+  color: #faf1e5;
+}
+.signin_page .login_form .form .forgetbox p {
+  margin-left: 150px;
+  color: #2a2a2a;
+}
+.signin_page .login_form .form .forgetbox p a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #faf1e5;
+  font-weight: 500;
+}
+.signin_page .login_form .form .buttonbox .button {
+  width: 100%;
+  font-size: 20px;
+  padding: 13px 0;
+  border: none;
+  outline: none;
+  background: #2a2a2a;
+  font-weight: 500;
+  color: #f9f9ff;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+}
+.signin_page .login_form .form .createanaccount {
+  font-size: 18px;
+  padding: 30px 0;
+  text-align: center;
+  align-items: center;
+  display: block;
+  font-weight: 500;
+  color: #faf1e5;
+}
+.signin_page .login_form .form .createanaccount a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: #f7e8f6;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 350px) {
+  .signin_page .login_form .form .inputbox {
+    width: 100%;
+    box-shadow: 1px 0px 5px 0px rgba(241,234,234,0.48);
+-webkit-box-shadow: 1px 0px 5px 0px rgba(241,234,234,0.48);
+-moz-box-shadow: 1px 0px 5px 0px rgba(241,234,234,0.48);
+  }
+  .signin_page {
+    width: 100%;
+    box-shadow: 0 0 0 0;
+  }
+  .signin_page .login_form .form .forgetbox p {
+    margin-left: 80px;
+  }
+  .signin_page .login_form .form .inputbox .login_input {
+    font-size: 17px;
+    padding: 6px 4px;
+  }
+
+  .signin_page .login_form .form .inputbox i {
+    font-size: 19px;
+  }
+
+  .signin_page .login_form .form .forgetbox span {
+    font-size: 16px;
+  }
+
+  .signin_page .login_form .form .forgetbox p a {
+    font-size: 17px;
+  }
+  .signin_page .login_form .form .buttonbox .button {
+    font-size: 18px;
+    padding: 11px 0;
+  }
+
+  .signin_page .login_form .login_greeting span {
+    font-size: 18px;
+  }
+
+  .signin_page .login_form .login_system b {
+    font-size: 20px;
+  }
+
+  .signin_page .login_form .form .forgetbox {
+    padding-bottom: 25px;
+  }
+
+  .signin_page .login_form .login_greeting {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  .signin_page .login_form .form .createanaccount {
+    padding: 20px 0;
+    font-size: 17px;
+  }
+} /* end media screen  */

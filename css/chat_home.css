@@ -1,0 +1,238 @@
+/* chat_home chatting display */
+.container {
+  width: 700px;
+  height: 100vh;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 5px 5px 0 0;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.topbar {
+  background-color: #ffffff;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  border-radius: 5px 5px 0 0;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.topbar .topbar_left {
+  display: flex;
+}
+.topbar .topbar_left .topbar_image {
+  margin-left: 10px;
+}
+.topbar .topbar_left .topbar_image img {
+  width: 45px;
+  height: 45px;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+.topbar .topbar_left .topbar_name {
+  margin-top: 10px;
+}
+.topbar .topbar_left .topbar_name span {
+  font-size: 18px;
+  color: #001038;
+  margin-left: 10px;
+}
+.topbar .topbar_left .topbar_name .online {
+  font-size: 16px;
+  color: #00ff0d;
+  margin-left: 10px;
+}
+.topbar .topbar_left .topbar_name .offline {
+  font-size: 16px;
+  color: #707470;
+  margin-left: 10px;
+}
+.chat-box {
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background: #ffffff;
+  box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+    inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+}
+.chat-box::-webkit-scrollbar {
+  width: 0px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.chat-box::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.chat-box .chat {
+  margin: 15px 0;
+}
+.chat-box .chat p {
+  word-wrap: break-word;
+  padding: 8px 16px;
+  /* box-shadow: 0 0 32px rgb(0 0 0 / 8%), 0rem 16px 16px -16px rgb(0 0 0 / 10%); */
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.chat-box .outgoing {
+  display: flex;
+  margin: 15px 0;
+}
+.chat-box .outgoing .details {
+  margin-left: auto;
+  max-width: calc(100% - 130px);
+}
+.outgoing .details p {
+  background: #0f0e0e;
+  color: #fff;
+  border-radius: 18px 18px 0 18px;
+}
+.chat-box .incoming {
+  display: flex;
+  align-items: flex-end;
+}
+.chat-box .incoming img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.chat-box .incoming .details {
+  margin-right: auto;
+  margin-left: 10px;
+  max-width: calc(100% - 130px);
+}
+.incoming .details p {
+  background: #ffffff;
+  color: #0f0e0e;
+  border-radius: 18px 18px 18px 18px;
+}
+
+.loadingUsers {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loadingMessege {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loadingMessege span i {
+  font-size: 30px;
+  color: #31e5f5;
+}
+.loadingUsers span {
+  margin-top: 80%;
+}
+.loadingUsers span i {
+  font-size: 30px;
+  color: #31e5f5;
+}
+
+/* typing area design */
+.typingarea {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  padding: 0px;
+  background: #ffffff;
+}
+.typingarea .inputwrap {
+  padding: 10px 10px;
+}
+.typingarea .inputwrap .text {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  border-radius: 35px;
+  padding-right: 70px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.typingarea .inputwrap img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  cursor: pointer;
+}
+
+/* chat_home response css code start */
+/* chat_home response css code start */
+/* chat_home response css code start */
+@media screen and (max-width: 768px) {
+  .homeMsg {
+    display: none !important;
+  }
+  .chat_home {
+    height: 100vh !important;
+    width: 100%;
+  }
+  .side_navbar {
+    display: none;
+  }
+  .user_list {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    display: none !important;
+  }
+  .container {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    max-height: 100%;
+    overflow: hidden;
+    background: #ffffff;
+  }
+  .chat-box {
+    width: 100%;
+    height: 100% !important;
+  }
+  .profile {
+    display: none !important;
+  }
+  .typingarea {
+    bottom: 0px;
+  }
+  .typingarea .inputwrap .text {
+    padding: 15px;
+    padding-right: 50px;
+  }
+  .typingarea .inputwrap img {
+    width: 25px;
+    height: 25px;
+  }
+  .loadingUsers {
+    height: 100%;
+    background: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  .loadingUsers span {
+    margin-top: 0%;
+  }
+} /* end responsive brackets */

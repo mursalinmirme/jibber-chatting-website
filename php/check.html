@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checking audio sounds</title>
+</head>
+<body>
+  <h1>Today I have to learn the audio functionality so let's start to write code.</h1>
+  <br>
+  <br>
+  <audio controls>
+    <source src="../photos/notification.mp3" type="audio/mp3">
+
+  </audio>
+  
+<br>
+<br>
+<br>
+
+
+
+<script>
+  setInterval(function(){
+    const audio = new Audio("../photos/notification.mp3");
+    audio.play();
+  },5000);
+</script>
+
+</body>
+</html>
+
+
+
+<audio controls><source src="../photos/notification.mp3" type="audio/mp3"></audio>
+

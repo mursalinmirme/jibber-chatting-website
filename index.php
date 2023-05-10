@@ -12,7 +12,7 @@ if(isset($_SESSION['logedIn']) || $_SESSION == true){
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chat_application</title>
+    <title>Jibber</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/6d208b1cbc.js" crossorigin="anonymous"></script>
   </head>

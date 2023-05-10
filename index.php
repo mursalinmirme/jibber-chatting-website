@@ -23,7 +23,7 @@ if(isset($_SESSION['logedIn']) || $_SESSION == true){
     <div class="signin_page">
       <div class="container">
         <div class="app_logo">
-          <h1>Jibber</h1>
+          <h1>Jibber/login</h1>
         </div>
         <div class="login_form">
           <div class="login_system">
